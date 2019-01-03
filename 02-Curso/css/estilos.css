@@ -1,0 +1,50 @@
+body {
+  width: 900px;
+  margin: 0px auto;
+  /*text-align: center;*/
+  font-family: Helvetica;
+}
+.cuadro {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+}
+.btn-prueba {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  text-decoration: none;
+}
+.btn-prueba:hover, .btn-prueba:focus, .btn-prueba.focus, .btn-prueba:active, .btn-prueba.active, .open>.dropdown-toggle.btn-prueba {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.input-prueba {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-image: none;
+  border: 1px solid transparent;
+  border-color: #2e6da4;
+  text-decoration: none;
+  height: 20px;
+  vertical-align: middle;
+}

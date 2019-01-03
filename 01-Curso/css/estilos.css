@@ -1,0 +1,81 @@
+body {
+  width: 900px;
+  margin: 0px auto;
+  /*text-align: center;*/
+  font-family: Helvetica;
+}
+.cuadro {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+}
+.cuadro h1 {
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+.cuadro p {
+  margin-bottom: 0px;
+}
+.contenido {
+  width: 200px;
+  height: 200px;
+  background: #dddddd;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #aaaaaa;
+}
+.azul {
+  background: #0074d9;
+  border: 1px solid #000;
+}
+.rojo {
+  background: #ff4136;
+  border: 1px solid #000;
+}
+.thumb {
+  width: 200px;
+  transition: 300ms all ease;
+}
+.grande {
+  width: 400px;
+}
+.titulo {
+  color: #ff0b0b;
+  background: #dedede;
+  padding: 10px;
+}
+.tituloGrande {
+  font-size: 60px;
+}
+.btn-prueba {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  text-decoration: none;
+}
+.btn-prueba:hover, .btn-prueba:focus, .btn-prueba.focus, .btn-prueba:active, .btn-prueba.active, .open>.dropdown-toggle.btn-prueba {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.text-input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  height: 20px;
+  display: inline-block;
+}

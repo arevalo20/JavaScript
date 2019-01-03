@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Curso JavaScript 02</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.css" />
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<section class="cuadro">
+		<div id="margen">
+			<textarea id="bom"></textarea>
+		</div>
+	</section>
+	<!--  -->
+	<section class="cuadro">
+		<article id="margen">
+			<span id="gato"></span>
+		</article>
+	</section>
+	<!--  -->
+	<section class="cuadro">
+			<div id="margen">
+				<button onclick="apretar();">Saludar</button>
+			</div>
+			<div id="margen">
+				<button onmouseover="encima();">Encima</button>
+			</div>
+			<div id="margen">
+				<button onmouseout="fuera();">Fuera</button>
+			</div>
+			<div id="margen">
+				<button class="btnBoton">Clase</button>
+			</div>
+		</section>
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<span id="ejeRepet"></span>
+			</div>
+			<div id="margen">
+				<span id="semana"></span>
+			</div>
+			<div id="margen">
+				<span id="numeros"></span>
+			</div>
+			<div id="margen">
+				<label id="diasDos"></label>
+			</div>
+		</section> -->
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<video class="video" src="assets/01.mp4" width="100%" controls="controls"></video>
+			</div>
+		</section> -->
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<span id="primero"></span>
+				<input type="text" id="textPrimero"/>
+				<button class="primero">Uno</button>
+			</div>
+			<div id="margen">
+				<span id="segundo"></span>
+				<button id="segundo" class="segundo">Dos</button>
+			</div>
+			<div id="margen">
+				<span id="tercero"></span>
+				<button id="tercero" class="tercero">Tres</button>
+			</div>
+		</section> -->
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<span id="botonTexto"></span>
+				<input type="text" id="botonTexto2"/>
+				<button id="boton">Primero</button>
+			</div>
+			<div id="margen">
+				<span id="btnTexto"></span>
+				<input type="text" id="btnTexto2"/>
+				<button id="btn">Segundo</button>
+			</div>
+		</section> -->
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<span>Fecha</span>
+				<input type="text" id="fecha" name=""/>
+			</div>
+			<div id="margen">
+				<span id="simbolo"></span>
+			</div>
+		</section> -->
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<span>Entender:</span>
+				<span id="entender" class="operacion"></span>
+			</div>
+			<hr/>
+			<div id="margen">
+				<span>Suma:</span>
+				<span id="suma" class="operacion"></span>
+			</div>
+			<div id="margen">
+				<span>Resta:</span>
+				<span id="resta" class="operacion"></span>
+			</div>
+			<div id="margen">
+				<span>Dividir:</span>
+				<span id="dividir" class="operacion"></span>
+				<span id="resto" class="operacion"></span>
+			</div>
+			<div id="margen">
+				<span>Multipicación:</span>
+				<span id="multipli" class="operacion"></span>
+			</div>
+			<div id="margen">
+				<span>Precedencia:</span>
+				<span id="prescedencia" class="operacion"></span>
+			</div>
+			<div id="margen">
+				<span>Comparar:</span>
+				<span id="conparar" class="operacion"></span>
+			</div>
+		</section> -->
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<span>Variable DOS = 3</span>
+				<span id="evaluacionResp" class="operacion"></span>
+				<br/>
+				<span id="evaluacion1" class="operacion"></span>
+				<br/>
+				<span id="evaluacion2" class="operacion"></span>
+				<br/>
+				<span id="evaluacion3" class="operacion"></span>
+				<br/>
+				<span id="evaluacion4" class="operacion"></span>
+			</div>
+		</section> -->
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<span>while1</span>
+				<label id="while1" class="operacion"></label>
+				<br/>
+				<span>while2</span>
+				<span id="while2" class="operacion"></span>
+				<br/>
+				<span>while3</span>
+				<span id="while3" class="operacion"></span>
+			</div>
+		</section> -->
+	<!--  -->
+	<!-- <section class="cuadro">
+			<div id="margen">
+				<span>Funciones1</span>
+				<label id="funciones1" class="operacion"></label>
+				<br/>
+				<span>Funciones2</span>
+				<span id="funciones2" class="operacion" style="height: 100%;"></span>
+				<br/>
+				<span>Funciones3</span>
+				<span id="funciones3" class="operacion"></span>
+				<br/>
+				<span>Funciones4</span>
+				<span id="funciones4" class="operacion"/></span>
+				<br/>
+				<span>Funciones5</span>
+				<span id="funciones5" class="operacion"/></span>
+				<br/>
+				<span>Funciones6</span>
+				<span id="funciones6" class="operacion"/></span>
+				<br/>
+				<span>Funciones7</span>
+				<span id="funciones7" class="operacion"/></span>
+				<br/>
+				<span>Funciones8</span>
+				<span id="funciones8" class="operacion"/></span>
+			</div>
+		</section> -->
+	<!--  -->
+	<script type="text/javascript" src="js/sweetalert2.js"></script>
+	<!-- <script type="text/javascript" src="js/animacion.js"> </script> -->
+	<script type="text/javascript" src="js/botones.js"> </script>
+	<!-- <script type="text/javascript" src="js/cursojs.js"> </script> -->
+	<!-- <script type="text/javascript" src="js/confirm.js"> </script> -->
+	<script type="text/javascript" src="js/objetos.js"> </script>
+</body>
+
+</html>

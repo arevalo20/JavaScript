@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Buenas practicas con Java Script</title>
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1 id="encabezado" class="">Buenas practicas con Java Script</h1>
+	<!--  -->
+	<section id="imagen" class="cuadro">
+		<img id="thumb" class="thumb" src="https://placekitten.com/400/400" width="400" alt="" />
+		<form action="js/modi-estilos.js" id="">
+			<input type="button" id="btnImagen" value="Cambio de tamaño" onclick="zoom();" />
+		</form>
+	</section>
+	<!--  -->
+	<!--  -->
+	<section class="cuadro" id="eventos">
+		<input type="text" id="input" name="" />
+		<button id="boton">Boton</button>
+		<a id="linkEnlace" href="http://localhost">localhost</a>
+	</section>
+	<!--  -->
+	<!--  -->
+	<section class="cuadro" id="formulario">
+		<form action="" name="formulario" method="get">
+			<input id="nombre" type="text" name="nombre" maxlength="30" placeholder="Nombre:" />
+			<!-- <br/> -->
+			<input id="hombre" type="radio" name="sexo" value="Hombre" />
+			Hombre
+			<input id="mujer" type="radio" name="sexo" value="Mujer" />
+			Mujer
+			<!-- <br/> -->
+			<input id="terminos" type="checkbox" name="terminos" />
+			Terminos y Condiciones
+			<!-- <br/> -->
+			<input type="submit" name="btn" id="btn" value="Enviar" />
+		</form>
+	</section>
+	<!--  -->
+	<!--  -->
+	<section class="cuadro">
+		<h1 id="titulo">Titulo del sitio | Document Objet Model</h1>
+		<section id="subtitulo"></section>
+		<p id="uno">1- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt aliqua.</p>
+		<p id="dos">2- Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p id="tres">3- Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</section>
+	<!--  -->
+	<section class="cuadro">
+		<ol id="lista">
+			<li id="primero">Elemento 1</li>
+			<li id="segundo">Elemento 2</li>
+		</ol>
+	</section>
+	<!--  -->
+	<section id="container">
+		<div class="contenido"></div>
+		<div class="contenido"></div>
+	</section>
+	<!--  -->
+	<h2 id="name"></h2>
+	<span id="name2"></span>
+	<h2 id="name3"></h2>
+	<h3 id="suma"></h3>
+	<h3 id="suma2"></h3>
+	<h3 id="numMax"></h3>
+	<!-- nombre -->
+	<h3 id="nuevoTexto"></h3>
+	<!-- fin nombre -->
+	<!-- Calculadora -->
+	<section class="cuadro">
+		<form action="js/funciones.js" id="calculadora">
+			<input id="num1" type="text" />
+			<input id="num2" type="text" />
+			<!-- <br/> -->
+			<input id="opeacion" name="opeacion" onclick="alert(sumar());" type="button" value="Sumar" />
+			<input id="opeacion2" name="opeacion2" onclick="alert(restar());" type="button" value="Restar" />
+		</form>
+	</section>
+	<!-- Calculadora -->
+	<h5 id="demo"></h5>
+	<h5 id="demo2"></h5>
+	<!-- <script src="js/intro.js"></script> -->
+	<script src="js/arreglos.js"> </script>
+	<script src="js/condicionales.js"> </script>
+	<script src="js/ciclos.js"> </script>
+	<script src="js/funciones.js"> </script>
+	<script src="js/scope.js"> </script>
+	<script src="js/metodos-cadenas.js"> </script>
+	<script src="js/dom.js"> </script>
+	<script src="js/modi-estilos.js"> </script>
+	<script src="js/eventos.js"> </script>
+	<script src="js/formulario.js"> </script>
+</body>
+
+</html>

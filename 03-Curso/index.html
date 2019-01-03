@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JS Principiantes</title>
+
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  <link rel="stylesheet" type="text/css" href="css/sweetalert2.css" />
+
+</head>
+
+<body>
+  <section>
+    <div id="app">
+    </div>
+
+    <hr>
+    <!-- .casa>.-pedro+.-juan+.-julian|bem -->
+    <div class="casa">
+      <div class="casa__pedro"></div>
+      <div class="casa__juan"></div>
+      <div class="casa__julian"></div>
+    </div>
+
+    <div class="ejempCursos">
+      <ul>
+        <li v-for="(curso, index) in cursos" :key="index">
+          <a :href="curso.url">
+            {{ curso.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p>Prueba de código</p>
+  </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
+
+  <script type="text/javascript" src="js/sweetalert2.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>

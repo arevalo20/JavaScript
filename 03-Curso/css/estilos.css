@@ -1,0 +1,14 @@
+body {
+  width: 750px;
+  margin: 0px auto;
+  /*text-align: center;*/
+  font-family: Helvetica;
+}
+
+.ejemplo {
+  color: rgb(255, 9, 9);
+}
+
+.nav {
+  display: inline;
+}
