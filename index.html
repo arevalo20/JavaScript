@@ -2,13 +2,13 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>6.0 Curso JavaScript</title>
 
   <link rel="stylesheet" type="text/css" href="css/sweetalert2.css" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -23,7 +23,60 @@
 
     <p onclick="Swal('Un mensaje de prueba')">Un párrafo de texto.</p>
 
-    <button onclick="Swal('Un mensaje','Ejemplo')">Un mensaje</button> | <button onclick="mensajeTexto()">Frase comillas</button> | <button onclick="mesesAno()">Meses del año</button>
+    <button onclick="Swal('Un mensaje','Ejemplo')">Un mensaje</button> |
+    <button onclick="mensajeTexto()">Frase comillas</button> |
+    <button onclick="mesesAno()">Meses del año</button> |
+    <button onclick="incremento()">Incremento</button> |
+    <button onclick="decremento()">Decremento</button> |
+    <button onclick="contrario()">Contrario de false</button>
+  </section>
+
+  <section>
+    <div>
+      <p>
+        <span id="numeroEx"></span> <span>+</span>
+        <span id="numeroEx2"></span> <span>=</span>
+        <span id="resultado"></span>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <span id="primNumero"></span> <span>+</span>
+        <span id="segNumero"></span> <span>=</span>
+        <span id="resultado2"></span>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <span id="numP1"></span> <span>%</span>
+        <span id="numP2"></span> <span>=</span>
+        <span id="resultP"></span>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <span id="numB1"></span> <span>%</span>
+        <span id="numB2"></span> <span>=</span>
+        <span id="resultB"></span>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <span id="estructura"></span>
+      </p>
+    </div>
+
+    <div>
+      <p>
+          <input id="numero" type="text">
+          <input id="letra" type="text">
+          <span id="valido"></span>
+      </p>
+    </div>
   </section>
 
   <!--  -->
