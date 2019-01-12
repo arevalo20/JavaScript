@@ -1,182 +1,87 @@
-// Swal({
-//   type: 'success',
-//   title: 'Oops...',
-//   text: 'Something went wrong!',
-// })
+// var dias = [
+//   "Lunes",
+//   "Martes",
+//   "Miércoles",
+//   "Jueves",
+//   "Viernes",
+//   "Sábado",
+//   "Domingo"
+// ];
+// var text;
 
-var $numero_1 = 3; // variable inicializada
-var $numero_2 = 7.4; // identificador
-var resultado = $numero_1 + $numero_2;
+// var numDias = dias.concat(3, 5, 4, 2, "Esto es una prueba", 8, 12, "mas texto", 8, 9, 1, 3, "aun mas texto");
+// console.log(numDias);
 
-var texto1 = "Una frase con 'comillas simples' dentro";
-var texto2 = 'Una frase con "comillas dobles" dentro';
+// text = "<ul class='cuadro'>";
+// numDias.forEach(semana);
+// text += "</ul>";
+// document.getElementById("dias").innerHTML = text;
+// console.log(numDias);
 
-var texto3 = "Una frase con \n 'comillas simples' \n dentro";
+// function semana(value) {
+//   text += "<li class='nav'>" + value + "</li>";
+// }
 
-var texto4 = 'Una frase con "comillas dobles" dentro';
+// function suma_y_muestra(primerNumero, segundoNumero) {
+//   var resultado = primerNumero + segundoNumero;
+//   document.getElementById('resultado1').innerHTML = resultado;
+// }
+// var numero1 = 3;
+// var numero2 = 5;
 
-function mensajeTexto() {
-  Swal({
-    title: texto3,
-    type: "success"
-    // text: 'You clicked the button!',
-  });
+// suma_y_muestra(numero1, numero2);
+
+// Definición de la función
+function calculaPrecioTotal(precio, porcentajeImpuestos) {
+  var gastosEnvio = 10;
+  var precioConImpuestos = (1 + porcentajeImpuestos / 100) * precio;
+  var precioTotal = precioConImpuestos + gastosEnvio;
+  return precioTotal.toFixed(2);
 }
 
-var dias = [
-  "Lunes",
-  "Martes",
-  "Miércoles",
-  "Jueves",
-  "Viernes",
-  "Sábado",
-  "Domingo"
-];
+var precioTotal = calculaPrecioTotal(23.34, 16);
+var otroPrecioTotal = calculaPrecioTotal(15.20, 4);
 
-var meses = [
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
-  "Mayo",
-  "Junio",
-  "Julio",
-  "Agosto",
-  "Septiembre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre"
-];
+document.getElementById('precioTotal').innerHTML = precioTotal;
+document.getElementById('otroPrecioTotal').innerHTML = otroPrecioTotal;
 
-function mesesAno() {
-  Swal({
-    title: meses[5],
-    type: "success"
-    // text: 'You clicked the button!',
-  });
+/*
+Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
+ */
+
+function numero_entero() {
+  num1 = document.getElementById('numero').value;
+  var resultado = numero_entero_aux();
+  document.getElementById('resultado1').value = num1;
+  document.getElementById('resultado2').value = resultado;
+  console.log(resultado);
 }
 
-var numero4 = 5;
-++numero4; // Incremento ++
-function incremento() {
-  Swal({
-    title: numero4,
-    type: "success"
-  });
-}
-
-var numero5 = 5;
---numero5; // Decremento --
-function decremento() {
-  Swal({
-    title: numero5,
-    type: "success"
-  });
-}
-
-var numeroEx = 5;
-var numeroEx2 = 2;
-numeroR1 = ++numeroEx + numeroEx2;
-// numeroResult = 8, numero1 = 6
-document.getElementById("numeroEx").innerHTML = numeroEx;
-document.getElementById("numeroEx2").innerHTML = numeroEx2;
-document.getElementById("resultado").innerHTML = numeroR1;
-console.log(resultado);
-
-var primNumero = 5;
-var segNumero = 2;
-resultado2 = primNumero++ + segNumero;
-// numero3 = 7, numP1 = 6
-document.getElementById("primNumero").innerHTML = primNumero;
-document.getElementById("segNumero").innerHTML = segNumero;
-document.getElementById("resultado2").innerHTML = resultado2;
-console.log(resultado2);
-
-var visible = false; // Muestra "false" y no "true"
-function contrario() {
-  Swal({
-    title: !visible,
-    type: "success"
-  });
-}
-console.log(!visible);
-console.log(visible); // mostrara el valor establecido
-// alert(!visible)
-
-var numP1 = 10;
-var numP2 = 5;
-resultP = numP1 % numP2; // resultado = 0
-document.getElementById("numP1").innerHTML = numP1;
-document.getElementById("numP2").innerHTML = numP2;
-document.getElementById("resultP").innerHTML = resultP;
-console.log(resultP);
-
-numB1 = 9;
-numB2 = 5;
-resultB = numB1 % numB2; // resultado = 4
-document.getElementById("numB1").innerHTML = numB1;
-document.getElementById("numB2").innerHTML = numB2;
-document.getElementById("resultB").innerHTML = resultB;
-console.log(resultB);
-
-// Estructuras de control de flujo
-
-// 3.4.1. Estructura if
-var mostrarMensaje = true;
-
-if (mostrarMensaje == true) {
-  document.getElementById("estructura").innerHTML = "Hola Mundo!";
-  console.log(mostrarMensaje);
-}
-
-// var Primero1 = 5;
-// var Primero2 = 8;
-
-// if(Primero1 <= Primero2) {
-//   alert("numero1 no es mayor que numero2");
-// }
-// if(Primero1 >= 0) {
-//   alert("numero2 es positivo");
-// }
-// if(Primero1 >= 0 || Primero1 != 0) {
-//   alert("numero1 es negativo o distinto de cero");
-// }
-// if(++Primero1 < Primero2 ) {
-//   alert("Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2");
-// }
-
-// var edad = 8;
-// if (edad >= 18) {
-//   Swal('Eres mayor de edad');
-// } else {
-//   Swal('Todavía eres menor de edad');
-// }
-
-// var nombre = "";
-
-// if(nombre == "") {
-//   Swal('','Aún no nos has dicho tu nombre');
-// }
-// else {
-//   Swal(nombre, 'Hemos guardado tu nombre');
-// }
-
-var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-
-var numero = prompt("Introduce tu número de DNI (sin la letra)");
-var letra = prompt("Introduce la letra de tu DNI (en mayúsculas)");
-letra = letra.toUpperCase();
-
-if (numero < 1 || numero > 99999999) {
-  // alert("El número proporcionado no es válido");
-  document.getElementById('valido').innerHTML = "El número proporcionado no es válido";
-} else {
-  var letraCalculada = letras[numero % 23];
-  if (letraCalculada != letra) {
-    document.getElementById('valido').innerHTML = "La letra o el número proporcionados no son correctos";
+function numero_entero_aux() {
+  num1 = document.getElementById('numero').value;
+  if (num1 % 2 == 0) {
+    return "par";
   } else {
-    document.getElementById('valido').innerHTML = "El número de DNI y su letra son correctos";
+    return "impar";
   }
 }
-document.getElementById('numero').value = numero;
-document.getElementById('letra').value = letra;
+
+// ----------------------
+
+function multiplica() {
+  var numero1 = null;
+  numero1 = document.getElementById('numeroMulti').value;
+  numero1 *= 2;
+
+  document.getElementById('respuMulti').innerHTML = numero1;
+}
+
+// ---------------
+
+var numero = prompt("Introduce un número y se mostrará su factorial");
+var resultado = 1;
+
+for(var i=1; i<=numero; i++) {
+  resultado *= i;
+}
+alert(resultado);
