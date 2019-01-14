@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body onload="init();">
   <section>
     <div>
       <h1>Curso completo JavaScript</h1>
@@ -20,16 +20,7 @@
 
   <section>
     <div>
-      <span id="dias"></span>
-    </div>
-
-    <div>
-      <!-- <p>
-        <span>Resultado1 =</span> <span id="resultado1"></span>
-      </p> -->
-      <p>
-        <span>Precio total =</span> <span id="precioTotal"></span>
-      </p>
+      <p><span>Precio total =</span> <span id="precioTotal"></span></p>
       <p>
         <span>Otro precio total =</span> <span id="otroPrecioTotal"></span>
       </p>
@@ -40,26 +31,75 @@
       <button onclick="numero_entero()">PAR/IMPAR</button>
       <span>
         <span>El numero </span>
-        <input id="resultado1" class="linea" readonly>
-        <span>es</span>
-        <input id="resultado2" class="linea" readonly>
-        <span>.</span>
+        <input id="resultado1" class="linea" readonly /> <span>es</span>
+        <input id="resultado2" class="linea" readonly /> <span>.</span>
       </span>
     </div>
-    <br>
+    <br />
     <div>
       <input id="numeroMulti" type="text" />
       <button onclick="multiplica()">Multiplicación</button>
       <span>
-        <span>El resultado es: </span>
-        <span id="respuMulti"></span>
+        <span>El resultado es: </span><input id="respuMulti" class="linea" readonly />
+        <span>por 4 = </span> <input id="multiPor2" class="linea" readonly />
       </span>
     </div>
-    <br>
+    <br />
     <div>
       <p id="mensaje1"></p>
       <p id="mensaje2"></p>
       <p id="mensaje3"></p>
+    </div>
+    <br />
+    <div>
+      <p id="palindromo"></p>
+      <p id="palindromo2"></p>
+    </div>
+    <br />
+    <div>
+      <!-- <button onclick="creaMensaje()">Mensaje prueba</button> -->
+    </div>
+    <br />
+    <div>
+      <div class="calculadora">
+        <div>
+          <input id="pantalla" type="text" value="" class="input-numCalcu" />
+        </div>
+        <div>
+          <div>
+            <input class="btn-calcu" id="reset" type="button" value="AC" />
+            <input class="btn-calcu" id="backspace" type="button" value="←" />
+            <input class="btn-calcu" id="porcentaje" type="button" value="%" />
+            <input class="btn-calcu" id="division" type="button" value="÷" />
+          </div>
+          <div>
+            <input class="btn-calcu" type="button" id="numero7" value="7" />
+            <input class="btn-calcu" type="button" id="numero8" value="8" />
+            <input class="btn-calcu" type="button" id="numero9" value="9" />
+            <input class="btn-calcu" type="button" id="multiplicacion" value="x" />
+          </div>
+          <div>
+            <input class="btn-calcu" type="button" id="numero4" value="4" />
+            <input class="btn-calcu" type="button" id="numero5" value="5" />
+            <input class="btn-calcu" type="button" id="numero6" value="6" />
+            <input class="btn-calcu" type="button" id="resta" value="-" />
+          </div>
+          <div>
+            <input class="btn-calcu" type="button" id="numero1" value="1" />
+            <input class="btn-calcu" type="button" id="numero2" value="2" />
+            <input class="btn-calcu" type="button" id="numero3" value="3" />
+            <input class="btn-calcu" type="button" id="suma" value="+" />
+          </div>
+          <div>
+            <input class="btn-calcu btn-calcu-cero" type="button" id="cero" value="0" />
+            <input class="btn-calcu" type="button" id="decimal" value="." />
+            <input class="btn-calcu" type="button" id="igual" value="=" />
+          </div>
+        </div>
+        <div>
+          <input type="text" id="resultado" value="0" size="12" class="input-numCalcu" />
+        </div>
+      </div>
     </div>
   </section>
 
